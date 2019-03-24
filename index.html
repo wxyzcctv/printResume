@@ -28,14 +28,14 @@
         </header>
         <aside>
             <div class="avatar">
-                <img src="https://gw.alicdn.com/tps/TB1W_X6OXXXXXcZXVXXXXXXXXXX-400-400.png" alt="头像">
+                <img>
             </div>
             <section>
                 <h2>基本信息</h2>
                 <div class="detail personal">
                     <div class="item">
                         <span>姓名</span>
-                        <span>小王</span>
+                        <span>王泽平</span>
                     </div>
                     <div class="item">
                         <span>性别</span>
@@ -93,20 +93,20 @@
                     </div>
                 </div>
             </section>
-            <section class="lastOne">
+            <section>
                 <h2>联系方式</h2>
                 <div class="detail commit">
                     <div class="item">
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#icon-phone6dianhua"></use>
                         </svg>
-                        <span>13600000000</span>
+                        <span>上传GitHub，不宜公开</span>
                     </div>
                     <div class="item">
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#icon-youjian"></use>
                         </svg>
-                        <span>wzp163@163.com</span>
+                        <span>wzp12133@163.com</span>
                     </div>
                     <div class="item">
                         <svg class="icon" aria-hidden="true">
@@ -118,7 +118,18 @@
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#icon-position02"></use>
                         </svg>
-                        <span>重庆 沙坪坝</span>
+                        <span>重庆 沙坪坝 重庆大学</span>
+                    </div>
+                </div>
+            </section>
+            <section class="lastOne">
+                <h2>自我评价</h2>
+                <div class="detail self-evaluation">
+                    <div class="item">
+                        <span>
+                            开朗乐观，积极向上，具有极强的自学能力和自律能力，勤于思考，具有独立承担任务的能力，
+                            良好的沟通能力，与项目成员和睦相处，富有团队协作精神
+                        </span>
                     </div>
                 </div>
             </section>
@@ -144,40 +155,50 @@
             <section>
                 <h2>项目经历</h2>
                 <div class="item">
-                    <h3>仿网易云音乐</h3>
+                    <h3>PC音乐</h3>
                     <ul>
-                        <li>项目介绍：这个项目是为了锻炼自己独立开发一个项目而做的联系项目，主要是完成了对网易云音乐的仿制，
-                            实现了后台音乐管理界面的制作，移动端首页界面的制作，播放页面的制作，歌词显示等功能。这个项目是我独自一个人完成。
-                            使用的是原生js编写，使用到了leancloud、七牛云等后台存储的工具，使用原生js实现MVC框架的搭建。
-                            项目中，遇到最大的麻烦就是歌词的显示部分，主要用到的技术是（现在还没有看到那个地方来，项目的介绍等到后期完善）
+                        <li>项目介绍：这个项目完成了一个PC端音乐播放界面，主要是为了锻炼自己独立开发一个项目的能力。实现了从后台获取数据，
+                            将获取到的歌曲数据展示在页面中；实现了屏幕的响应式，根据屏幕的变化可以页面的功能等比例变化；实现了歌词的适时
+                            显示，并添加了显示的炫酷效果；实现了专辑的轮播。项目中使用了百度FM API开放数据、通过jQuery实现MVC框架的搭建，
+                            使用audio实现音乐的播放和暂停。项目中，遇到最大的麻烦就是歌词的显示，主要是通过正则匹配的方式将歌词时间和歌词
+                            分开，然后通过audio获得歌曲当前播放时间，然后与歌词的播放时间进行匹配，最后进行展示。
                         </li>
-                        <li>技术栈：ES6、webpack</li>
-                        <li>项目源码：https://github.com/wxyzcctv/123-music-demo</li>
-                        <li>项目预览<a href="https://wxyzcctv.github.io/123-music-demo/src/index.html">手机预览点击</a></li>
+                        <li>技术栈：ES6 jQuery CSS3 </li>
+                        <li>项目源码：https://wxyzcctv.github.io/MyFm</li>
+                        <li>项目预览：<a href="https://wxyzcctv.github.io/MyFm/index.html">点击查看</a></li>
                     </ul>
                 </div>
                 <div class="item">
                     <h3>画板</h3>
                     <ul>
-                        <li>项目介绍：本项目是实现了在线画板的制作，主要实现了通过画笔在浏览器上进行绘画操作，实现了响应式。
-
+                        <li>项目介绍：本项目完成了在线画板的制作，主要实现了通过画笔在浏览器上进行绘画操作，实现了响应式。
+                            整个项目的绘画是通过在canvas标签上进行的，而且在通过js获取鼠标的点击事件、移动事件、抬起事件，
+                            当鼠标按下的时候就是绘画开始的时候，监听鼠标移动事件，然后将最新的鼠标的点作为起始点，
+                            鼠标移动到下一个点的时候就是终点，将起点和终点通过lineTo进行画线，这样就画出连续的线了，
+                            最后监听鼠标抬起事件，鼠标抬起，那么就结束画线。同样，擦除功能也是如此的。
                         </li>
-                        <li>技术栈：ES6 canvas</li>
+                        <li>技术栈：ES6 canvas 原生JS icon</li>
                         <li>项目源码：https://github.com/wxyzcctv/canvas-demo</li>
-                        <li>项目预览 <a href="https://wxyzcctv.github.io/canvas-demo/index.html">点击查看</a></li>
+                        <li>项目预览：<a href="https://wxyzcctv.github.io/canvas-demo/index.html">点击查看</a></li>
                     </ul>
                 </div>
                 <div class="item">
-                    <h3>会动的皮卡丘</h3>
+                    <h3>会动的海绵宝宝</h3>
                     <ul>
-                        <li>项目介绍：本项目想展示的是通过css画出一只皮卡丘的脸，并且加入了代码显示部分</li>
-                        <li>技术栈：ES6</li>
-                        <li>项目源码：https://github.com/wxyzcctv/make-pikachu-demo</li>
-                        <li>项目预览<a href="https://wxyzcctv.github.io/make-pikachu-demo/index.html">点击查看</a></li>
+                        <li>项目介绍：本项目完成了动画显示海绵宝宝的脸，主要是为了锻炼自己对CSS3的熟练程度。
+                            项目通过CSS在屏幕上画出海绵宝宝的脸，加入了代码显示部分，页面中绘画和代码的显示同步进行，
+                            实现了代码高亮，添加了动画显示的速度选项，以及代码显示和隐藏功能，能进行不同屏幕的适配，
+                            在移动端也能正常观看。项目中通过设置定时器和substring将代码添加到页面中，通过设定定时器的
+                            时间进行调速，通过pre标签保存代码的显示格式。本项目的主要难点就是利用纯CSS进行红晕和舌头的绘制，
+                            这里主要通过background-image实现各个点的绘制。
+                        </li>
+                        <li>技术栈：ES6 CSS3 jQuery</li>
+                        <li>项目源码：https://wxyzcctv.github.io/SpongeBobSquarePants</li>
+                        <li>项目预览：<a href="https://wxyzcctv.github.io/SpongeBobSquarePants/index.html">点击查看</a></li>
                     </ul>
                 </div>
             </section>
-            <section>
+            <section class="lastOne">
                 <h2>获奖情况</h2>
                 <div class="detail education">
                     <div class="item">
@@ -189,7 +210,7 @@
                     </div>
                 </div>
             </section>
-            <section class="lastOne">
+            <!-- <section class="lastOne">
                 <h2>自我评价</h2>
                 <div class="detail education">
                     <div class="item">
@@ -197,7 +218,7 @@
                             良好的沟通能力，与项目成员和睦相处，富有团队协作精神</span>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
     </div>
 </body>

@@ -139,6 +139,11 @@ main{
     border-bottom:none;
 }
 @media (max-width:768px){
+    body{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
     aside{
         width: 100%;
     }
@@ -214,4 +219,3 @@ main{
         background: white;
     }
 }
-
